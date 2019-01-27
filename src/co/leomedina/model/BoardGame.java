@@ -13,36 +13,25 @@ public class BoardGame {
         mMaxPlayers = maxPlayers;
     }
 
-    public String getName() {
+    String getName() {
         return mName;
     }
 
-    public int getMinPlayers() {
+    int getMinPlayers() {
         return mMinPlayers;
     }
 
-    public int getMaxPlayers() {
+    int getMaxPlayers() {
         return mMaxPlayers;
     }
 
-    public String getDescription() {
+    String getDescription() {
         return mDescription;
-    }
-
-    public String getSynopsis() {
-        return "Name: " +
-                mName +
-                "%nDescription: " +
-                mDescription +
-                "%nPlayers: " +
-                mMinPlayers +
-                " - " +
-                mMaxPlayers;
     }
 
     @Override
     public String toString() {
-        return String.format("%s is playable with %s to %s players",
+        return String.format("%s playable with %s to %s players",
                 mName,
                 mMinPlayers,
                 mMaxPlayers);
